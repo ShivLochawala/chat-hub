@@ -60,7 +60,7 @@ class _SignInState extends State<SignIn> {
           ),
         ) :SingleChildScrollView(
         child: Container(
-          height: MediaQuery.of(context).size.height - 50,
+          height: MediaQuery.of(context).size.height - 150,
           alignment: Alignment.bottomCenter,
           child:  Container(
             padding: EdgeInsets.symmetric(horizontal: 24),
@@ -105,6 +105,7 @@ class _SignInState extends State<SignIn> {
                   ),
                 ),
                 SizedBox(height: 8),
+                /*
                 Container(
                   alignment: Alignment.centerRight,
                   child:  Container(
@@ -114,7 +115,7 @@ class _SignInState extends State<SignIn> {
                     ),
                   ),
                 ),
-                SizedBox(height: 8),
+                SizedBox(height: 8),*/
                 GestureDetector(
                   onTap: (){
                     signMeIn();
@@ -136,7 +137,7 @@ class _SignInState extends State<SignIn> {
                   ),
                 ),
                 SizedBox(height:16),
-                Container(
+                /*Container(
                   alignment: Alignment.center,
                   width: MediaQuery.of(context).size.width,
                   padding: EdgeInsets.symmetric(vertical: 20),
@@ -151,7 +152,7 @@ class _SignInState extends State<SignIn> {
                     ),
                   ),
                 ),
-                SizedBox(height:16),
+                SizedBox(height:16),*/
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [

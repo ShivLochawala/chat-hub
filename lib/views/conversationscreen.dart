@@ -63,7 +63,10 @@ class _ConversationScreenState extends State<ConversationScreen> {
       body: Container(
         child: Stack(
           children: [
-            ChatMessageList(),
+            Container(
+              margin: EdgeInsets.only(bottom:90.0),
+              child: ChatMessageList(),
+            ),
             Container(
               alignment: Alignment.bottomCenter,
               child: Container(
@@ -114,11 +117,11 @@ class MessageTile extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.symmetric(horizontal:24, vertical:16),
+      padding: EdgeInsets.symmetric(horizontal:10, vertical:5),
       width: MediaQuery.of(context).size.width,
       alignment: isSendByMe ? Alignment.centerRight : Alignment.centerLeft,
       child: Container(
-        padding: EdgeInsets.symmetric(horizontal:24, vertical:16),
+        padding: EdgeInsets.symmetric(horizontal:20, vertical:16),
         decoration: BoxDecoration(
           gradient: LinearGradient(
             colors: isSendByMe ?[

@@ -58,7 +58,7 @@ class _SignUpState extends State<SignUp> {
         )
       ): SingleChildScrollView(
         child: Container(
-          height: MediaQuery.of(context).size.height - 50,
+          height: MediaQuery.of(context).size.height - 150,
           alignment: Alignment.bottomCenter,
           child: Container(
             padding: EdgeInsets.symmetric(horizontal: 24),
@@ -136,6 +136,7 @@ class _SignUpState extends State<SignUp> {
                   ),
                 ),
                 SizedBox(height: 16),
+                /*
                 Container(
                   alignment: Alignment.center,
                   width: MediaQuery.of(context).size.width,
@@ -151,7 +152,7 @@ class _SignUpState extends State<SignUp> {
                     ),
                   ),
                 ),
-                SizedBox(height: 16),
+                SizedBox(height: 16),*/
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children:[
